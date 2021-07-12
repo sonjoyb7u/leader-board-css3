@@ -3,6 +3,8 @@
 
 /* Start Common Styles Or Utilities */
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
@@ -31,6 +33,45 @@ hr {
     margin-bottom: 30px;  
 }
 /* End Common Styles Or Utilities */
+
+/* Start CSS - Header Nav Section */
+.header {
+    background-color: #562EFF;
+}
+.menus {
+    width: 940px;
+    height: 90px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.menu-left {
+    display: flex;
+    align-items: center;
+}
+.menu-left > img {
+    width: 40px;
+}
+.menu-left span {
+    margin-left: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: -15px;
+}
+.menu-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 36px;
+}
+/* End CSS - Header Nav Section */
 
 /* Start CSS - Top Players Section */
 .top-players {
@@ -99,9 +140,6 @@ hr {
 /* ---------------------------------------*\
         Start CSS - Latest Course Section
 /* -------------------------------------- */
-.latest-courses {
-    
-}
 .courses {
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -128,7 +166,7 @@ hr {
 }
 .course-author {
     color: #ED6B4F;
-    font-size: 14px
+    font-size: 14px;
     font-weight: 500;
 }
 .course-info {
@@ -174,6 +212,20 @@ hr {
 /* ---------------------------------------*\
         Start CSS - Media Queries Section
 /* -------------------------------------- */
+/* Start CSS - Header Nav Menu Section for Mobile devices */
+@media only screen and (max-width: 688px) {
+    .menus {
+        width: 100%;
+    }
+}
+
+/* Start CSS - Header Nav Menu Section for iPad devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .menus {
+        width: 100%;
+    }
+}
+
 /* Start CSS - Players, Blogs, Courses Section for Mobile devices */
 @media only screen and (max-width: 688px) {
     .container {
